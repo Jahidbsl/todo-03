@@ -15,8 +15,8 @@ include "action/fatch.php";
 </head>
 
 <body>
-    <div class="container mb-4 mt-4" style="width:400px">
-        <form class="d-flex" role="search">
+    <div class="container mb-4 mt-4" style="width:400px; margin-right:100px">
+        <form action="" method="post" class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
