@@ -13,7 +13,7 @@ $sql = sprintf(
 $result = $conn->query($sql);
 if ($result) {
     echo 'Data INserted';
-    return header('Location: /index.php');
+    return header('Location: /submit.php');
 } else {
     echo $conn->error;
     die();
