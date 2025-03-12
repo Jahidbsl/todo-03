@@ -16,9 +16,15 @@ include "action/fatch.php";
 
 <body>
     <div class="container mb-4 mt-4" style="width:400px; margin-right:100px">
-        <form action="" method="post" class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <a href="index.php" class="btn btn-primary">Create Task</a>
+        <form action="" class="d-flex" role="search">
+            <input class="form-control me-2" name="search" value="<?php echo isset($_GET["search"]) ?  $_GET["search"] :'' ?>" type="text"
+                placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
+            <?php if (isset($_GET["search"]) ) { ?>
+                <a class="btn btn-danger" href="submit.php">Reset</a>
+
+            <?php } ?>
         </form>
     </div>
 
